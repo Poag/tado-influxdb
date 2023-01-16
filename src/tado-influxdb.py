@@ -12,11 +12,11 @@ import config
 class Tado:
   username       = ''
   password       = ''
-  useragent      = fake_useragent.UserAgent(fallback='Mozilla/5.0 (X11; OpenBSD amd64; rv:28.0) Gecko/20100101 Firefox/28.0')
+  useragent      = 'Mozilla/5.0 (X11; OpenBSD amd64; rv:28.0) Gecko/20100101 Firefox/28.0'
   headers        = {
     'Referer'    : 'https://my.tado.com',
     'Origin'     : 'https://my.tado.com',
-    'User-Agent' : useragent.random
+    'User-Agent' : useragent
   }
   api            = 'https://my.tado.com/api/v2/homes'
   access_token   = ''
